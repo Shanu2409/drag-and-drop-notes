@@ -111,6 +111,8 @@ const Notes = ({ notes = [], setNotes = () => {} }) => {
         return (
           <Note
             key={note.id}
+            id={note.id}
+            setNotes={setNotes}
             ref={
               noteRefs.current[note.id]
                 ? noteRefs.current[note.id]
